@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="heading-title">TodoList</h1>
+  </header>
+  <section class="container">
+    <div class="form-container">
+      <form class="todo-form">
+        <input type="text" class="todo-input" />
+        <button class="add-todo" type="submit">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+      <div class="select">
+        <select class="filter-todos" name="todos">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </div>
+    <div class="todo-container">
+      <ul class="todolist">
+        <!-- <li class="todo">
+            <p class="todo__title">todo #1</p>
+            <span class="todo__createdAt">1402/1/28</span>
+            <button><i class="todo__check far fa-check-square"></i></button>
+            <button><i class="todo__remove far fa-trash-alt"></i></button>
+          </li> -->
+      </ul>
+    </div>
+  </section>
+  <script src="./todo.js"></script>
+</body>
+
+</html>
